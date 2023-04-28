@@ -56,9 +56,15 @@ time.innerHTML = d.toLocaleTimeString();
      document.write(" 11:30AM: " + workTwo);
      document.write("<style> h2,h1{color: black;}body{background-image: linear-gradient(90deg, #e9491d, #efdb50, #efdb50,#50ef6d);} </style>");
     }
-    if (hr == 12) {
-     document.write(" 12PM: Time for lunch!");
-    }
+    if (hr == 12 && min <= 30) {
+        document.write(" 12PM: Lunch Time!");
+        document.body.style.backgroundImage = "url('image/hdlunch.png')";
+        document.body.style.backgroundSize = "1800px";
+        document.body.style.backgroundRepeat = "no-repeat";
+    } if (hr == 12 && min >= 30) {
+        document.write(" 12:30PM: Break");
+        document.write("<style> h2,h1{color: black;}body{background-image: linear-gradient(90deg, #e9491d, #efdb50, #efdb50,#50ef6d);} </style>");
+       }
 
 /* After Noon */
 
