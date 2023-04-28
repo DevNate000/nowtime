@@ -34,8 +34,7 @@ time.innerHTML = d.toLocaleTimeString();
 
     if (hr == 9 && min <= 30) {
      document.write(" 9AM: Time to start your work");
-    }
-    if (hr == 9 && min >= 30) {
+    } if (hr == 9 && min >= 30) {
      document.write("<img class=nowimg src='image/nkey.png'>");
      document.write(" 9:30am");
     }
@@ -43,15 +42,18 @@ time.innerHTML = d.toLocaleTimeString();
      document.write("<img class=nowimg src='image/khanimg.png'>");
      document.write(" 10AM: Khan");
      document.write("<style> body{background:  #089b79;} </style>");
-    }
-    if (hr == 10 && min >= 30) {
+    } if (hr == 10 && min >= 30) {
      document.write("<img class=nowimg src='image/khanimg.png'>");
      document.write(" 10:30am: Khan");
      document.write("<style> body{background:  #089b79;} </style>");
     }
-    if (hr == 11) {
+    if (hr == 11 && min <= 30) {
      document.write("<img class=nowimg src='image/tri2.png'>");
      document.write(" 11AM: " + workTwo);
+     document.write("<style> h2,h1{color: black;}body{background-image: linear-gradient(90deg, #e9491d, #efdb50, #efdb50,#50ef6d);} </style>");
+    } if (hr == 11 && min >= 30) {
+     document.write("<img class=nowimg src='image/tri2.png'>");
+     document.write(" 11:30AM: " + workTwo);
      document.write("<style> h2,h1{color: black;}body{background-image: linear-gradient(90deg, #e9491d, #efdb50, #efdb50,#50ef6d);} </style>");
     }
     if (hr == 12) {
