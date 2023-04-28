@@ -1,0 +1,98 @@
+/* Main */
+
+body {
+  background-image: linear-gradient(90deg, #658cf7, #4f7bf3, #1151ff);
+}
+
+
+iframe{
+  border-radius: none;
+  border-color: none;
+  border: none;
+  align-items: center;
+  text-align: center;
+  background: none;
+}
+
+
+/*Car Images*/
+
+img {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tinyimg {
+  width: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: black;
+}
+.membershipimg{
+  width: 30px
+
+}
+
+
+.style404{
+  text-align: center;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#ff1d1d,red, #1c1c1c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+
+}
+
+
+/* Table */
+
+.races {
+  font-weight: bold;
+  color: yellow;
+}
+.racesleft {
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#ff9238, #cc5c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px white; 
+}
+.views {
+  font-weight: bold;
+  color: lime;
+}
+
+
+.name-stats{
+  font-size: 40px;
+  text-align: center;
+  max-width: 453px;
+  margin: auto;
+}
+
+.table-bordered {
+  text-align: center;
+}
+
+.table-bordered td {
+  padding: 6px;
+}
+.table-bordered th {
+  padding: 1px;
+}
+.container {
+  max-width: 1350px;
+}
+
+
