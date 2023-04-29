@@ -18,16 +18,28 @@ time.innerHTML = d.toLocaleTimeString();
 /* Early Morning */
     
     if (hr == 5) {
+     document.body.style.backgroundImage = "url('image/morning.png')";
+     document.body.style.backgroundSize = "1800px";
+     document.body.style.backgroundRepeat = "no-repeat";
      document.write(" 5AM You woke up early!");
     }
     if (hr == 6) {
+     document.body.style.backgroundImage = "url('image/morning.png')";
+     document.body.style.backgroundSize = "1800px";
+     document.body.style.backgroundRepeat = "no-repeat";
      document.write(" 6AM Great star to the day!");
     }
     if (hr == 7) {
+     document.body.style.backgroundImage = "url('image/morning.png')";
+     document.body.style.backgroundSize = "1800px";
+     document.body.style.backgroundRepeat = "no-repeat";   
      document.write(" 7AM Good Morning!");
     }
     if (hr == 8) {
-     document.write(" 8AM Mornin!");
+     document.body.style.backgroundImage = "url('image/morning.png')";
+     document.body.style.backgroundSize = "1800px";
+     document.body.style.backgroundRepeat = "no-repeat";
+     document.write(" 8AM Good Mornin!");
     }
 
 /* Morning */
@@ -78,9 +90,11 @@ time.innerHTML = d.toLocaleTimeString();
      document.write(" 3PM: " + workFour);
     }
     if ((hr == 16)) {
+     document.write("<style> h2,h1{color: black;}body{background-image: linear-gradient(90deg, #ff874f, #ff7636, #ff5100);} </style>");
      document.write(" 4PM: 💪 Exercise");
     }
     if ((hr == 17)) {
+     document.write("<style> h2,h1{color: black;}body{background-image: linear-gradient(90deg, #ff874f, #ff7636, #ff5100);} </style>");
      document.write(" 5PM: TITLE");
     }
 
