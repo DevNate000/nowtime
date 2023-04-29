@@ -18,27 +18,19 @@ time.innerHTML = d.toLocaleTimeString();
 /* Early Morning */
     
     if (hr == 5) {
-     document.body.style.backgroundImage = "url('image/morning.png')";
-     document.body.style.backgroundSize = "1800px";
-     document.body.style.backgroundRepeat = "no-repeat";
+     document.write("<style>body{background: fixed url('image/morning.png') no-repeat;background-size:cover;}</style>");
      document.write(" 5AM You woke up early!");
     }
     if (hr == 6) {
-     document.body.style.backgroundImage = "url('image/morning.png')";
-     document.body.style.backgroundSize = "1800px";
-     document.body.style.backgroundRepeat = "no-repeat";
+     document.write("<style>body{background: fixed url('image/morning.png') no-repeat;background-size:cover;}</style>");
      document.write(" 6AM Great star to the day!");
     }
     if (hr == 7) {
-     document.body.style.backgroundImage = "url('image/morning.png')";
-     document.body.style.backgroundSize = "1800px";
-     document.body.style.backgroundRepeat = "no-repeat";   
+     document.write("<style>body{background: fixed url('image/morning.png') no-repeat;background-size:cover;}</style>");
      document.write(" 7AM Good Morning!");
     }
     if (hr == 8) {
-     document.body.style.backgroundImage = "url('image/morning.png')";
-     document.body.style.backgroundSize = "1800px";
-     document.body.style.backgroundRepeat = "no-repeat";
+     document.write("<style>body{background: fixed url('image/morning.png') no-repeat;background-size:cover;}</style>");
      document.write(" 8AM Good Mornin!");
     }
 
@@ -69,13 +61,11 @@ time.innerHTML = d.toLocaleTimeString();
      document.write("<style> h2,h1{color: black;}body{background-image: linear-gradient(90deg, #e9491d, #efdb50, #efdb50,#50ef6d);} </style>");
     }
     if (hr == 12 && min <= 30) {
-        document.write(" 12PM: Lunch Time!");
-        document.body.style.backgroundImage = "url('image/hdlunch.png')";
-        document.body.style.backgroundSize = "1800px";
-        document.body.style.backgroundRepeat = "no-repeat";
+     document.write(" 12PM: Lunch Time!");
+     document.write("<style>body{background: fixed url('image/hdlunch.png') no-repeat;background-size:cover;}</style>");
     } if (hr == 12 && min >= 30) {
-        document.write(" 12:30PM: Break");
-        document.write("<style> h2,h1{color: black;}body{background-image: linear-gradient(90deg, #e9491d, #efdb50, #efdb50,#50ef6d);} </style>");
+     document.write(" 12:30PM: Break");
+     document.write("<style> h2,h1{color: black;}body{background-image: linear-gradient(90deg, #e9491d, #efdb50, #efdb50,#50ef6d);} </style>");
        }
 
 /* After Noon */
@@ -104,10 +94,8 @@ time.innerHTML = d.toLocaleTimeString();
      document.write(" 6PM: Dinner Time :D");
     }
     if ((hr == 19) || (hr == 20) || (hr == 21)) {
-        document.body.style.backgroundImage = "url('image/night.png')";
-        document.body.style.backgroundSize = "1800px";
-        document.body.style.backgroundRepeat = "no-repeat";
-        document.write(" Evening");
+     document.write("<style>body{background: fixed url('image/night.png') no-repeat;background-size:cover;}</style>");
+     document.write(" Evening");
        }
 
 /* Sleeping */
