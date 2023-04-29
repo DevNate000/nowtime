@@ -89,10 +89,19 @@ time.innerHTML = d.toLocaleTimeString();
     if ((hr == 18)) {
      document.write(" 6PM: Dinner Time :D");
     }
+    if ((hr == 19) || (hr == 20) || (hr == 21)) {
+        document.body.style.backgroundImage = "url('image/night.png')";
+        document.body.style.backgroundSize = "1800px";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.write(" Evening");
+       }
 
 /* Sleeping */
 
-    if ((hr == 1) || (hr == 2) || (hr == 3) || (hr == 4) || (hr == 23) || (hr == 0)) {
+    if ((hr == 22) || (hr == 23) || (hr == 0) || (hr == 1) || (hr == 2) || (hr == 3) || (hr == 4)) {
+     document.body.style.backgroundImage = "url('image/night.png')";
+     document.body.style.backgroundSize = "1800px";
+     document.body.style.backgroundRepeat = "no-repeat";
      document.write(" Go to bed. It's late!");
     }
 
