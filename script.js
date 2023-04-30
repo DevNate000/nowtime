@@ -81,6 +81,7 @@ time.innerHTML = d.toLocaleTimeString();
 
     if (hr == 13) {
      document.write(" 1PM: Back on the grind!");
+     document.write("<style>body{background: fixed url('image/grind.png') no-repeat;background-size:cover;}</style>");
     }
     if (hr == 14) {
      document.write(" 2PM: " + workThree);
