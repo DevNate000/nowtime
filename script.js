@@ -15,6 +15,8 @@ time.innerHTML = d.toLocaleTimeString();
     var workTwo = "HTML | JS | CSS "
     var workThree = "Computer Science Principles"
     var workFour = "Mathmatics"
+    var nightStyle ="<style>body{background: fixed url('image/night.png') no-repeat;background-size:cover;}</style>"
+    var dayStyle ="<style>body{background: fixed url('image/morning.png') no-repeat !important;background-size:cover!important;}</style>"
 
     var clockin = 12
     var clockout = 16
@@ -26,21 +28,20 @@ time.innerHTML = d.toLocaleTimeString();
 /* Early Morning */
     
     if (hr == 5) {
-     document.write("<style>body{background: fixed url('image/morning.png') no-repeat;background-size:cover;}</style>");
      document.write(" 5AM You woke up early!");
     }
     if (hr == 6) {
-     document.write("<style>body{background: fixed url('image/morning.png') no-repeat;background-size:cover;}</style>");
      document.write(" 6AM Great star to the day!");
     }
     if (hr == 7) {
-     document.write("<style>body{background: fixed url('image/morning.png') no-repeat;background-size:cover;}</style>");
      document.write(" 7AM Good Morning!");
     }
     if (hr == 8) {
-     document.write("<style>body{background: fixed url('image/morning.png') no-repeat;background-size:cover;}</style>");
      document.write(" 8AM Good Mornin!");
     }
+    if ((hr == 5) || (hr == 6) || (hr == 7) || (hr == 8)) {
+        document.write(dayStyle);
+       }
 
 /* Morning */
 
@@ -102,7 +103,7 @@ time.innerHTML = d.toLocaleTimeString();
      document.write(" 6PM: Dinner Time :D");
     }
     if ((hr == 19) || (hr == 20) || (hr == 21)) {
-     document.write("<style>body{background: fixed url('image/night.png') no-repeat;background-size:cover;}</style>");
+     document.write(nightStyle);
      document.write(" Evening");
        }
 
@@ -110,9 +111,7 @@ time.innerHTML = d.toLocaleTimeString();
 /* Sleeping */
 
     if ((hr == 22) || (hr == 23) || (hr == 0) || (hr == 1) || (hr == 2) || (hr == 3) || (hr == 4)) {
-     document.body.style.backgroundImage = "url('image/night.png')";
-     document.body.style.backgroundSize = "1800px";
-     document.body.style.backgroundRepeat = "no-repeat";
+     document.write("<style>body{background: fixed url('image/night.png') no-repeat !important;background-size:cover!important;}</style>");
      document.write(" Go to bed. It's late!");
     }
 
