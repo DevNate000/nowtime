@@ -3,8 +3,6 @@ let d = new Date();
 time.innerHTML = d.toLocaleTimeString();
 
 
-
-
     type="text/javascript">
     document.write("<h2>");
     var day = new Date();
@@ -15,14 +13,16 @@ time.innerHTML = d.toLocaleTimeString();
     var workTwo = "HTML | JS | CSS "
     var workThree = "Computer Science Principles"
     var workFour = "Mathmatics"
+    var dayStyle ="<style>body{background: fixed url('image/morning.png') no-repeat;background-size:cover;}</style>"
+    var eveningStyle ="<style>body{background: fixed url('image/evening.png') no-repeat;background-size:cover;}</style>"
     var nightStyle ="<style>body{background: fixed url('image/night.png') no-repeat;background-size:cover;}</style>"
-    var dayStyle ="<style>body{background: fixed url('image/morning.png') no-repeat !important;background-size:cover!important;}</style>"
 
     var clockin = 12
     var clockout = 16
 
     if (clockin >= hr && clockout >= hr) {
-    document.write("<style>body{background: fixed url('image/chip.png') no-repeat !important;background-size:cover!important;}</style>");
+     document.write("Working :D");
+     document.write("<style>body{background: fixed url('image/chip.png') no-repeat !important;background-size:cover!important;}</style>");
     }
 
 /* Early Morning */
@@ -103,7 +103,7 @@ time.innerHTML = d.toLocaleTimeString();
      document.write(" 6PM: Dinner Time :D");
     }
     if ((hr == 19) || (hr == 20) || (hr == 21)) {
-     document.write(nightStyle);
+     document.write(eveningStyle);
      document.write(" Evening");
        }
 
@@ -111,7 +111,7 @@ time.innerHTML = d.toLocaleTimeString();
 /* Sleeping */
 
     if ((hr == 22) || (hr == 23) || (hr == 0) || (hr == 1) || (hr == 2) || (hr == 3) || (hr == 4)) {
-     document.write("<style>body{background: fixed url('image/night.png') no-repeat !important;background-size:cover!important;}</style>");
+     document.write(nightStyle);
      document.write(" Go to bed. It's late!");
     }
 

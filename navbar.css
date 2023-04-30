@@ -3,10 +3,10 @@
   .topnav {
       background-image: linear-gradient(to right, rgb(46, 46, 46) , rgb(0, 0, 0));
       border-radius: 15px;
-      border: 2px solid white;
+      border: 2px solid rgb(187, 0, 255);
       text-align: center!important;
       position: relative;
-      max-width: 810px;
+      max-width: 300px;
       margin: auto;
     }
     
