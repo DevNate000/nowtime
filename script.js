@@ -15,6 +15,14 @@ time.innerHTML = d.toLocaleTimeString();
     var workTwo = "HTML | JS | CSS "
     var workThree = "Computer Science Principles"
     var workFour = "Mathmatics"
+
+    var clockin = 12
+    var clockout = 16
+
+    if (clockin >= hr && clockout >= hr) {
+    document.write("<style>body{background: fixed url('image/chip.png') no-repeat !important;background-size:cover!important;}</style>");
+    }
+
 /* Early Morning */
     
     if (hr == 5) {
@@ -97,6 +105,7 @@ time.innerHTML = d.toLocaleTimeString();
      document.write("<style>body{background: fixed url('image/night.png') no-repeat;background-size:cover;}</style>");
      document.write(" Evening");
        }
+
 
 /* Sleeping */
 
