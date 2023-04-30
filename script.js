@@ -17,8 +17,8 @@ time.innerHTML = d.toLocaleTimeString();
     var eveningStyle ="<style>body{background: fixed url('image/evening.png') no-repeat;background-size:cover;}</style>"
     var nightStyle ="<style>body{background: fixed url('image/night.png') no-repeat;background-size:cover;}</style>"
 
-    var clockin = 12
-    var clockout = 16
+    var clockin = 0
+    var clockout = 0
 
     if (clockin >= hr && clockout >= hr) {
      document.write("Working :D");
